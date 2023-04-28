@@ -1,0 +1,114 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+li {
+    list-style: none;
+}
+
+a,
+img,
+span,
+input,
+button {
+    display: block;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+img {
+    height: auto;
+}
+
+input,
+button {
+    background: none;
+    border: none;
+    color: inherit;
+}
+
+input {
+    width: 100%;
+}
+
+button {
+    cursor: pointer;
+}
+
+sub {
+    vertical-align: baseline;
+}
+
+sup {
+    vertical-align: top;
+}
+
+sub,
+sup {
+    font-size: 0.75rem;
+}
+
+html {
+    font-family: $ff-nunito-sans;
+    font-size: 10px;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: $background;
+    color: $on-background;
+    font-size: $body-3;
+    overflow: hidden;
+}
+
+:focus-visible {
+    outline: 2px solid $white;
+    outline-offset: 2px;
+}
+
+::selection {
+    background-color: $white-alpha-8;
+}
+
+::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: $white-alpha-8;
+    border-radius: $radius-pill;
+}
+
+@font-face {
+    font-family: 'Material Symbols Rounded';
+    font-style: normal;
+    font-weight: 400;
+    src: url(/src/font/material-symbol-rounded.woff2) format('woff2');
+}
+
+.m-icon {
+    font-family: 'Material Symbols Rounded';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 2.4rem;
+    line-height: 1;
+    letter-spacing: normal;
+    text-transform: none;
+    white-space: nowrap;
+    word-wrap: normal;
+    direction: ltr;
+    font-feature-settings: "liga";
+    -webkit-font-feature-settings: "liga";
+    -webkit-font-smoothing: antialiased;
+    height: 1em;
+    width: 1em;
+    overflow: hidden;
+}
