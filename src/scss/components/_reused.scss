@@ -21,7 +21,7 @@
         box-shadow: $shadow-1;
     }
 
-    &:is(:focus, :focus-visible) {
+    & :is(:focus, :focus-visible) {
         box-shadow: none;
     }
 
@@ -38,7 +38,7 @@
         background-color: $white-alpha-4;
     }
 
-    &:is(:focus, :focus-visible)::before {
+    & :is(:focus, :focus-visible)::before {
         background-color: $white-alpha-8;
         animation: ripple 250ms ease forwards;
     }

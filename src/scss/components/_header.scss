@@ -80,9 +80,9 @@
                     }
                 }
 
-                // &:has(.searching)::before {
-                //     display: block;
-                // }
+                &:has(.searching)::before {
+                    display: block;
+                }
 
                 .search-field {
                     height: 80px;
@@ -128,7 +128,7 @@
                     gap: 16px;
                     padding-inline: 16px 24px;
 
-                    &:is(.m-icon, .item-subtitle) {
+                    & :is(.m-icon, .item-subtitle) {
                         color: $on-surface-variant;
                     }
 
