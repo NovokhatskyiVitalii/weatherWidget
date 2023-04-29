@@ -1,6 +1,6 @@
-@import './variables';
+@import './base/variables';
 
-@import './base';
+@import './base/base';
 
 @import './components/reused';
 @import './components/layout/header';
@@ -10,3 +10,4 @@
 @import './components/hourly-forecast';
 @import './components/layout/footer';
 @import './components/loading';
+@import './components/error-content';
