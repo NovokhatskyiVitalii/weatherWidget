@@ -3,8 +3,9 @@
 @import './base';
 
 @import './components/reused';
-@import './components/header';
-@import './components/main';
+@import './components/layout/header';
+@import './components/layout/main';
 @import './components/forecast';
 @import './components/highlights';
 @import './components/hourly-forecast';
+@import './components/layout/footer';
