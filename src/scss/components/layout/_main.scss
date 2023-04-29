@@ -85,3 +85,112 @@ article {
         }
     }
 }
+
+@media (min-width: 768px) {
+    main {
+        height: calc(100vh - 96px);
+        height: calc(100svh - 96px);
+
+        .container {
+            display: grid;
+            padding-block-start: 0;
+            grid-template-columns: 280px minmax(0, 1fr);
+            align-items: flex-start;
+            gap: 24px;
+
+            .content-left {
+                position: sticky;
+                top: 0;
+
+                .section {
+
+                    .forecast-card {
+                        .card-item {
+
+                            &:not(:last-child) {
+                                margin-block-end: 16px;
+                            }
+                        }
+                    }
+
+                    &:not(:last-child) {
+                        margin-block: 20px;
+                    }
+                }
+            }
+
+            .content-right {
+                .highlights {
+                    padding-block-start: 0;
+                    margin-block-start: 20px;
+
+                    .m-icon {
+                        font-size: 3.6rem;
+                    }
+
+                    .card-lg {
+                        .highlights-list {
+                            grid-template-columns: 1fr 1fr;
+
+                            .highlights-card {
+
+
+                                &.two {
+                                    .card-list {
+                                        .card-item {
+                                            width: 46%;
+                                        }
+                                    }
+                                }
+
+                                &.one {
+                                    .card-item {
+                                        width: 25%;
+                                        flex-direction: column-reverse;
+                                        gap: 8px;
+                                    }
+                                }
+
+                                &:nth-child(-n+2) {
+                                    grid-column: span 2;
+                                    height: 160px;
+                                }
+
+                                &:nth-child(-n+3) {
+                                    height: 130px;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .hourly-forecast {
+                    .slider-container {
+                        margin-inline: 0 -24px;
+                        border-bottom-left-radius: $radius-16;
+                        border-top-left-radius: $radius-16;
+
+                        .slider-list {
+
+                            .slider-item {
+                                .card-sm {
+                                    padding: 16px;
+                                }
+                            }
+
+                            &::before {
+                                display: none;
+                            }
+
+                            &::after {
+                                min-width: 12px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+
+}

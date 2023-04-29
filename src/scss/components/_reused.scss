@@ -136,3 +136,61 @@
 .label-2 {
     font-size: $label-2;
 }
+
+@media (min-width: 768px) {
+
+    /**
+    *REUSED
+    */
+    .container {
+        padding: 24px;
+    }
+
+    .title-1 {
+        $title-1: 2.4rem;
+    }
+
+    .section>.title-2 {
+        margin-block-end: 16px;
+    }
+
+    .card-lg {
+        padding: 24px;
+    }
+
+    .card-sm {
+        padding: 20px;
+        display: grid;
+        grid-template-rows: min-content 1fr;
+    }
+
+    .badge {
+        top: 20px;
+        right: 20px;
+
+    }
+
+    /**
+    *HEADER
+    */
+
+    .header {
+        .container {
+            .search-view {
+                clip-path: circle(3% at calc(100%-273px) 6%);
+            }
+
+            .header-actions {
+                gap: 24px;
+
+                .btn-primary {
+                    padding-inline: 16px;
+
+                    .span {
+                        display: block;
+                    }
+                }
+            }
+        }
+    }
+}

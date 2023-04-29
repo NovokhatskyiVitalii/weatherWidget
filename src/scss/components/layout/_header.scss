@@ -1,6 +1,6 @@
-.header .btn-primary .span {
-    display: none;
-}
+// .header .btn-primary .span {
+//     display: none;
+// }
 
 .logo {
     img {
@@ -26,6 +26,10 @@
 
         .btn-primary {
             padding-inline: 12px;
+
+            .span {
+                display: none;
+            }
         }
 
         .search-view {
