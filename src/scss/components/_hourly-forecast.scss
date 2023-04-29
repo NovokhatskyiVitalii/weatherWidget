@@ -1,0 +1,47 @@
+.hourly-forecast {
+    margin-block-start: 10px;
+
+    .title-2 {
+        margin-block-end: 5px;
+    }
+
+    .slider-container {
+        overflow-x: auto;
+        margin-inline: -16px;
+
+        .slider-list {
+            display: flex;
+            gap: 12px;
+
+            .slider-item {
+                min-width: 110px;
+                flex: 1 1 100%;
+
+                .slider-card {
+                    text-align: center;
+
+                    .weather-icon {
+                        margin-inline: auto;
+                        margin-block: 12px;
+                    }
+                }
+            }
+
+            &:first-child {
+                margin-block-end: 16px;
+            }
+
+            &::before,
+            &::after {
+                content: "";
+                min-width: 4px;
+            }
+        }
+
+
+        &::-webkit-scrollbar {
+            display: none;
+        }
+    }
+
+}
