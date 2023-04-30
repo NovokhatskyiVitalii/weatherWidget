@@ -176,12 +176,8 @@ article {
 
                                 &:nth-child(-n+2) {
                                     grid-column: span 2;
-                                    height: 160px;
                                 }
 
-                                &:nth-child(-n+3) {
-                                    height: 130px;
-                                }
                             }
                         }
                     }
@@ -223,7 +219,7 @@ article {
         height: calc(100svh - 96px);
 
         .container {
-            grid-template-columns: 360px minmax(0 1fr);
+            grid-template-columns: 360px minmax(0, 1fr);
             gap: 40px;
 
             .content-left {
@@ -259,14 +255,6 @@ article {
                                 .m-icon {
                                     font-size: 4.8rem;
                                 }
-
-                                &:nth-last-child(-n+2) {
-                                    height: 200px;
-                                }
-
-                                &:nth-last-child(n+3) {
-                                    height: 150px;
-                                }
                             }
                         }
                     }
@@ -279,6 +267,28 @@ article {
                         }
                     }
                 }
+            }
+        }
+    }
+
+}
+
+@media (min-width: 1400px) {
+
+    main {
+        .container {
+
+            .content-right {
+
+                .highlights {
+                    .card-lg {
+
+                        .highlights-list {
+                            grid-template-columns: repeat(4, 1fr);
+                        }
+                    }
+                }
+
             }
         }
     }

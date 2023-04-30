@@ -179,11 +179,11 @@
             position: relative;
             height: 120px;
             z-index: 4;
+        }
 
-            .container {
-                padding-block: 0;
-                height: 100%;
-            }
+        .header .container {
+            padding-block: 0;
+            height: 100%;
         }
 
         .search-view,
@@ -195,7 +195,10 @@
             animation: none;
         }
 
-        .container .search-view .search-wrapper {
+        // .container .search-view .search-wrapper {
+        //     border-block-end: 0px;
+        // }
+        .search-wrapper {
             border-block-end: 0px;
         }
 
@@ -213,9 +216,14 @@
             height: 48px;
         }
 
+        .search-field {
+            height: 56px;
+            border-radius: $radius-28;
+        }
+
         .search-result,
         .search-view:not(:focus-within) .search-result {
-            display: none;
+            // display: none;
         }
 
         .search-view:focus-within .search-result.active {
@@ -237,14 +245,15 @@
             border-block-start: 1px solid $outline;
             overflow-y: auto;
             overflow-y: overlay;
+        }
 
-            &:empty {
-                min-height: 120px;
-            }
 
-            &::-webkit-scrollbar-button {
-                height: 20px;
-            }
+        .search-view .view-list:empty {
+            min-height: 120px;
+        }
+
+        .search-view .view-list::-webkit-scrollbar-button {
+            height: 20px;
         }
 
         .search-view :is(:hover, :has(.view-list):hover) {
