@@ -86,6 +86,22 @@ article {
     }
 }
 
+@media (min-width: 340px) {
+
+    .highlights-list {
+        .highlights-card {
+
+            &.one {
+                .m-icon {
+                    width: 60px;
+                }
+            }
+        }
+    }
+
+}
+
+
 @media (min-width: 768px) {
     main {
         height: calc(100vh - 96px);
@@ -104,7 +120,13 @@ article {
 
                 .section {
 
+                    .current-weather-card {
+                        padding: 30px;
+                    }
+
                     .forecast-card {
+                        padding: 30px;
+
                         .card-item {
 
                             &:not(:last-child) {
@@ -139,6 +161,7 @@ article {
                                     .card-list {
                                         .card-item {
                                             width: 46%;
+                                            display: -webkit-box;
                                         }
                                     }
                                 }
@@ -191,6 +214,73 @@ article {
             }
         }
     }
+}
 
+@media (min-width: 1200px) {
+
+    main {
+        height: calc(100vh - 96px);
+        height: calc(100svh - 96px);
+
+        .container {
+            grid-template-columns: 360px minmax(0 1fr);
+            gap: 40px;
+
+            .content-left {
+
+                .current-weather {
+                    .weather-icon {
+                        width: 80px;
+                    }
+                }
+
+                .forecast {
+                    .forecast-card {
+                        padding: 36px;
+
+                        .title-2 {
+                            $title-2: 2.2rem;
+                        }
+
+                    }
+                }
+
+
+            }
+
+            .content-right {
+
+                .highlights {
+                    .card-lg {
+
+                        .highlights-list {
+
+                            .highlights-card {
+                                .m-icon {
+                                    font-size: 4.8rem;
+                                }
+
+                                &:nth-last-child(-n+2) {
+                                    height: 200px;
+                                }
+
+                                &:nth-last-child(n+3) {
+                                    height: 150px;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .hourly-forecast {
+                    .slider-container {
+                        .slider-list {
+                            gap: 16px;
+                        }
+                    }
+                }
+            }
+        }
+    }
 
 }
