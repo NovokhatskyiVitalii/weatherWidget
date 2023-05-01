@@ -1,7 +1,7 @@
 import './scss/style.scss';
 
-import main from './modules/main.js';
+import app from './modules/app';
 
 window.addEventListener('DOMContentLoaded', () => {
-    main();
+    app();
 });

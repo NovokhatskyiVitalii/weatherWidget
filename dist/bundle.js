@@ -1,1 +1,1 @@
-(()=>{"use strict";window.addEventListener("DOMContentLoaded",(()=>{console.log("s")}))})();
+(()=>{"use strict";window.addEventListener("DOMContentLoaded",(()=>{(()=>{const e=document.querySelector("[data-search-view]");!function(e,t,c){for(const t of e)t.addEventListener("click",c)}(document.querySelectorAll("[data-search-toggler]"),0,(()=>e.classList.toggle("active")))})()}))})();

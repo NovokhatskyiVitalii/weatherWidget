@@ -195,9 +195,10 @@
             animation: none;
         }
 
-        // .container .search-view .search-wrapper {
-        //     border-block-end: 0px;
-        // }
+        .container .search-view .search-wrapper {
+            border-block-end: 0px;
+        }
+
         .search-wrapper {
             border-block-end: 0px;
         }
@@ -223,7 +224,8 @@
 
         .search-result,
         .search-view:not(:focus-within) .search-result {
-            // display: none;
+            display: none;
+            position: relative;
         }
 
         .search-view:focus-within .search-result.active {

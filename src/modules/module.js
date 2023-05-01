@@ -1,4 +1,4 @@
-const main = () => {
+const module = () => {
 
     const weekDayNames = [
         "Sunday",
@@ -79,4 +79,4 @@ const main = () => {
     }
 };
 
-export default main;
+export default module;
