@@ -70,6 +70,10 @@
                     display: none;
                 }
 
+                &:has(.searching)::before {
+                    display: block;
+                }
+
                 @keyframes loading {
                     0% {
                         transform: translateY(-50%) rotate(0);
@@ -80,9 +84,7 @@
                     }
                 }
 
-                &:has(.searching)::before {
-                    display: block;
-                }
+
 
                 .search-field {
                     height: 80px;

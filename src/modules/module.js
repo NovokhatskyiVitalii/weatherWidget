@@ -1,4 +1,4 @@
-const weekDayNames = [
+export const weekDayNames = [
   "Sunday",
   "Monday",
   "Tuesday",
@@ -8,7 +8,7 @@ const weekDayNames = [
   "Saturday",
 ];
 
-const monthNames = [
+export const monthNames = [
   "Jan",
   "Feb",
   "Mar",
@@ -23,7 +23,7 @@ const monthNames = [
   "Dec",
 ];
 
-const getDate = function (dateUnix, timezone) {
+export const getDate = function (dateUnix, timezone) {
   const date = new Date((dateUnix + timezone) * 1000);
   const weekDayName = weekDayNames[date.getUTCDay()];
   const monthName = monthNames[date.getUTCMonth()];
@@ -31,7 +31,7 @@ const getDate = function (dateUnix, timezone) {
   return `${weekDayName} ${date.getUTCDate()}, ${monthName}}`;
 };
 
-const getTime = function (timeUnix, timezone) {
+export const getTime = function (timeUnix, timezone) {
   const date = new Date((timeUnix = timezone) * 1000);
   const hours = date.getUTCHours();
   const minutes = date.getUTCMinutes();
@@ -40,20 +40,20 @@ const getTime = function (timeUnix, timezone) {
   return `${hours % 12 || 12}:${minutes} ${period}`;
 };
 
-const getHours = function (timeUnix, timezone) {
-  const date = new Date((timeUnix = timezone) * 1000);
+export const getHours = function (timeUnix, timezone) {
+  const date = new Date((timeUnix + timezone) * 1000);
   const hours = date.getUTCHours();
   const period = hours > 12 ? "PM" : "AM";
 
   return `${hours % 12 || 12} ${period}`;
 };
 
-const mps_to_kmh = (mps) => {
+export const mps_to_kmh = (mps) => {
   const mph = mps * 3600;
   return mph / 1000;
 };
 
-const aqiText = {
+export const aqiText = {
   1: {
     level: "Good",
     message:
@@ -80,5 +80,3 @@ const aqiText = {
       "Health warnings of emergence conditions. The entire population is more likely to be affected.",
   },
 };
-
-export { getDate, getTime, getHours, mps_to_kmh, aqiText };
