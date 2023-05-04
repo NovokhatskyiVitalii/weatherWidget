@@ -6,5 +6,4 @@ import route from "./modules/route";
 import module from "./modules/module";
 
 // window.addEventListener("DOMContentLoaded", () => {
-//   app();
 // });
