@@ -1,17 +1,13 @@
 .fade-in .footer {
     display: flex;
+    justify-content: center;
 }
-
-// .footer .body-3:last-child {
-//     gap: 6px;
-// }
 
 .footer {
     color: $on-surface-variant;
     text-align: center;
     gap: 12px 24px;
     margin-block-start: 28px;
-    // display: none;
 
     .body-3:last-child {
         display: flex;
